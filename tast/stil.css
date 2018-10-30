@@ -1,0 +1,328 @@
+body{width:100%;/* РЁРёСЂРёРЅР° СЌР»РµРјРµРЅС‚Р° РІ РїРёРєСЃРµР»Р°С… */
+    align-items: center ;
+    display: inline;
+    position: relative;
+    font-family: Verdana 
+     }
+.poltava{text-align:center;
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+
+}
+.poltava h1 {text-align:center;
+font-family: Verdana;
+color:rgb(128,128,128);
+}
+.poltava li {text-align:center;
+  color:rgb(128,128,128);
+}
+.osebe{text-align:center;
+  max-width: 75%;
+position: relative;
+  margin: auto;}
+.osebe h1 {text-align:center;
+color:rgb(128,128,128);}  
+.osebe li {text-align:center;
+color:rgb(128,128,128);}  
+.osebe h2 {text-align:center;
+color:rgb(128,128,128);}
+
+* {box-sizing: border-box}
+body {background-color: rgb(250,240,230);
+  font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: block; ;
+margin: auto;}
+img {display: block;
+  margin: auto;
+}
+
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {width: 100%
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 100%) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 49%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.navbar-logo1 {
+  position: absolute;
+  left: 51%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 100%) {
+.menu-main li {display: block;}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+  border: 1px solid gray;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(192,192,192);
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(128,128,128);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100%) {
+  .prev, .next,.text {font-size: 11px}
+}
+.toTop {
+
+  cursor: pointer;
+  position:fixed;
+  bottom:10px; /* отступ кнопки от нижнего края страницы*/
+  right:10px;
+  background-color: rgb(192,192,192);
+  top: 10%p;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 3px 3px 3px;
+}
+.toTop:hover {
+  background-color: rgb(128,128,128);
+}
+.submenu a:hover {color: #ddbe86;}
+ 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+.link_group {
+margin:20px auto;
+width:555px;
+text-align:center;
+}
+.link_group a {
+margin:0 20px;
+padding:5px 15px;
+color:#000;
+font-weight:bold;
+display:inline-block;
+vertical-align:top;
+*display:inline;
+*zoom:1;
+position:relative;
+text-decoration:none;
+text-transform:uppercase;
+border:1px solid #ccc;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+behavior: url(PIE.htc);
+}
+.link_group a:hover {
+color:#cc0000;
+}
+.popup {
+padding:5px 15px 15px;
+position:fixed;
+top:20%;
+left: 30%;
+display:none;
+overflow:hidden;
+border:1px solid #ccc;
+background:#fff;
+-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+z-index:100;
+/*behavior: url(PIE.htc);*/
+}
+.popup h2 {
+font:bold 18px/32px Arial, san-serif;
+}
+.popup p {
+text-align: right;
+}
+.popup a.closed {
+   display: inline-block;
+        border: 1px solid #ccc;
+        color: #fff;
+        padding: 0 8px;
+        margin: 6px;
+        text-decoration: none;
+        position:absolute;
+        top:0px;
+        right:10px;
+        background: #ccc;
+        font-size: 14pt;
+        cursor:pointer;
+        border-radius: 3px 3px 3px 3px;
+}
+#overlay {
+width:100%;
+height:100%;
+position:fixed;
+top:0;
+left:0;
+display:none;
+background:#000;
+opacity:.8;
+}
